@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
     <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".MainActivity"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#FFEB3B"
@@ -78,9 +74,9 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/login"
             android:layout_centerInParent="true"
+            android:ems="15"
             android:inputType=""
             android:text="Password"
-            android:ems="15"
             android:textAlignment="center" />
 
         <Button
@@ -114,4 +110,3 @@
 
 
     </RelativeLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
