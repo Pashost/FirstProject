@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -13,83 +14,58 @@
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp">
 
+        <LinearLayout
+            android:id="@+id/top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="85dp"
+                android:layout_height="67dp"
+                app:srcCompat="@drawable/free_icon_univeristy_5642037" />
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="85dp"
-            android:layout_height="67dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="117dp"
-            android:layout_marginTop="128dp"
-            android:layout_marginEnd="209dp"
-            app:srcCompat="@drawable/free_icon_univeristy_5642037" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="111dp"
+                    android:layout_height="43dp"
+                    android:text="UNSW"
+                    android:textSize="34sp" />
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="111dp"
-            android:layout_height="43dp"
-            android:layout_alignStart="@+id/textView2"
-            android:layout_alignEnd="@+id/textView2"
-            android:layout_alignBottom="@+id/imageView"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="0dp"
-            android:layout_marginTop="124dp"
-            android:layout_marginEnd="13dp"
-            android:layout_marginBottom="28dp"
-            android:text="UNSW"
-            android:textAlignment="center"
-            android:textSize="34sp" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="110dp"
-            android:layout_height="27dp"
-            android:layout_alignStart="@+id/imageView"
-            android:layout_alignBottom="@+id/imageView"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="214dp"
-            android:layout_marginTop="171dp"
-            android:layout_marginEnd="87dp"
-            android:layout_marginBottom="-3dp"
-            android:text="australia"
-            android:textAlignment="center" />
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="110dp"
+                    android:layout_height="27dp"
+                    android:text="australia"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </LinearLayout>
 
         <TextView
             android:id="@+id/textView8"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textView2"
+            android:layout_below="@+id/top"
             android:layout_marginTop="66dp"
-            android:text="Major incedent"
+            android:text="Major incedent Responds aplecation"
             android:textAlignment="center"
             android:layout_centerHorizontal="true"
             android:textAllCaps="true"
             android:textSize="36dp" />
 
-        <TextView
-            android:id="@+id/textView9"
-            android:layout_width="match_parent"
-            android:layout_height="56dp"
-            android:layout_below="@+id/textView8"
-            android:layout_marginTop="0dp"
-            android:text="Responds aplecation"
-            android:textAlignment="center"
-            android:layout_centerHorizontal="true"
-            android:textAllCaps="true"
-            android:textSize="36dp" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName3"
+            android:id="@+id/login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textView9"
-            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/textView8"
             android:layout_marginTop="75dp"
-            android:layout_marginBottom="246dp"
             android:layout_centerHorizontal="true"
             android:ems="15"
             android:inputType=""
@@ -100,14 +76,11 @@
             android:id="@+id/editTextTextPersonName4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignStart="@+id/editTextTextPersonName3"
-            android:layout_alignEnd="@+id/editTextTextPersonName3"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="1dp"
-            android:layout_marginEnd="1dp"
-            android:layout_marginBottom="200dp"
+            android:layout_below="@+id/login"
+            android:layout_centerInParent="true"
             android:inputType=""
             android:text="Password"
+            android:ems="15"
             android:textAlignment="center" />
 
         <Button
@@ -128,7 +101,6 @@
             android:id="@+id/button4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
             android:layout_alignStart="@+id/button3"
             android:layout_alignEnd="@+id/button3"
             android:layout_alignParentBottom="true"
