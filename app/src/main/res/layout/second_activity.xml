@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="299dp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/download" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@+id/image"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="200dp">
+
+        <TextView
+            android:id="@+id/Dish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="Fish"
+            android:textAllCaps="true"
+            android:textColor="#F1A859" />
+
+        <TextView
+            android:id="@+id/NameOfDish"
+            android:layout_width="253dp"
+            android:layout_height="39dp"
+            android:layout_below="@+id/Dish"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="110dp"
+            android:text="Tomato-Poached Fish"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/Souses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/NameOfDish"
+            android:layout_marginTop="17dp"
+            android:textSize="17dp"
+            android:text="Whis Chili Oil,Shalot &amp; Herbs" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/Souses"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="53dp"
+            android:layout_marginBottom="33dp">
+
+            <TextView
+                android:id="@+id/Descreption"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Tomato-poached fish is a dish where a mild, white fish is poached in a flavorful tomato-based broth. The broth is typically made with a combination of fresh tomatoes, garlic, onions, herbs, and sometimes white wine. The fish is cooked gently in the broth until it is cooked through and tender. The dish is often served with a side of vegetables or crusty bread to soak up the delicious broth. This dish is a healthy and flavorful option for seafood lovers and is a great way to enjoy fresh, seasonal tomatoes." />
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="83dp"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="#F4E475"
+                android:text="Costomasible" />
+
+            <TextView
+                android:id="@+id/textTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FFEB3B"
+                android:gravity="center"
+                android:text="20-30 min" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/StartCooking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="54dp"
+        android:layout_centerHorizontal="true"
+        android:text="Start Cooking" />
+
+
+</RelativeLayout>
