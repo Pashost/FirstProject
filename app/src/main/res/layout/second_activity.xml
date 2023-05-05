@@ -1,102 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".MainActivity"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
-
-    <ImageView
-        android:id="@+id/image"
-        android:layout_width="match_parent"
-        android:layout_height="299dp"
-        android:layout_alignParentTop="true"
-        android:src="@drawable/download" />
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="160dp"
-        android:layout_below="@+id/image"
-        android:layout_alignParentBottom="true"
-        android:layout_marginTop="0dp"
-        android:layout_marginBottom="200dp">
-
-        <TextView
-            android:id="@+id/Dish"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:text="Fish"
-            android:textAllCaps="true"
-            android:textColor="#F1A859" />
-
-        <TextView
-            android:id="@+id/NameOfDish"
-            android:layout_width="253dp"
-            android:layout_height="39dp"
-            android:layout_below="@+id/Dish"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="48dp"
-            android:layout_marginEnd="110dp"
-            android:text="Tomato-Poached Fish"
-            android:textColor="#000000"
-            android:textSize="25dp" />
-
-        <TextView
-            android:id="@+id/Souses"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/NameOfDish"
-            android:layout_marginTop="17dp"
-            android:textSize="17dp"
-            android:text="Whis Chili Oil,Shalot &amp; Herbs" />
-
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:layout_below="@+id/Souses"
-            android:layout_alignParentBottom="true"
-            android:layout_marginTop="53dp"
-            android:layout_marginBottom="33dp">
-
-            <TextView
-                android:id="@+id/Descreption"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="Tomato-poached fish is a dish where a mild, white fish is poached in a flavorful tomato-based broth. The broth is typically made with a combination of fresh tomatoes, garlic, onions, herbs, and sometimes white wine. The fish is cooked gently in the broth until it is cooked through and tender. The dish is often served with a side of vegetables or crusty bread to soak up the delicious broth. This dish is a healthy and flavorful option for seafood lovers and is a great way to enjoy fresh, seasonal tomatoes." />
-        </ScrollView>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="83dp"
-            android:layout_centerHorizontal="true"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textStatus"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:background="#F4E475"
-                android:text="Costomasible" />
-
-            <TextView
-                android:id="@+id/textTime"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="#FFEB3B"
-                android:gravity="center"
-                android:text="20-30 min" />
-        </LinearLayout>
-    </RelativeLayout>
-
     <Button
         android:id="@+id/StartCooking"
         android:layout_width="wrap_content"
@@ -106,5 +14,132 @@
         android:layout_centerHorizontal="true"
         android:text="Start Cooking" />
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/download" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="0dp">
+                <TextView
+                    android:id="@+id/Dish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="Fish"
+                    android:paddingHorizontal="20dp"
+                    android:textAllCaps="true"
+                    android:textColor="#F1A859" />
+
+                <TextView
+                    android:id="@+id/NameOfDish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:layout_below="@+id/Dish"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:paddingHorizontal="20dp"
+                    android:text="Tomato-Poached Fish"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/Souses"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/NameOfDish"
+                    android:paddingHorizontal="20dp"
+                    android:textSize="17dp"
+                    android:text="Whis Chili Oil,Shalot &amp; Herbs" />
+
+                <TextView
+                    android:id="@+id/Descreption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Souses"
+                    android:layout_marginTop="10dp"
+                    android:paddingHorizontal="20dp"
+                    android:text="Tomato-poached fish is a dish where a mild, white fish is poached in a flavorful tomato-based broth. The broth is typically made with a combination of fresh tomatoes, garlic, onions, herbs, and sometimes white wine. The fish is cooked gently in the broth until it is cooked through and tender. The dish is often served with a side of vegetables or crusty bread to soak up the delicious broth. This dish is a healthy and flavorful option for seafood lovers and is a great way to enjoy fresh, seasonal tomatoes.Tomato poached fish is a delicious and healthy dish that is perfect for seafood lovers. It is a simple recipe that involves cooking fish in a tomato-based broth. This dish is not only easy to make, but it is also very flavorful and nutritious. In this essay, we will discuss the benefits of tomato poached fish, how to prepare it, and some tips for serving it.
+
+Tomatoes are a rich source of vitamins, minerals, and antioxidants. They contain vitamin C, vitamin K, potassium, and lycopene, a powerful antioxidant that has been shown to reduce the risk of chronic diseases such as cancer and heart disease. Fish, on the other hand, is an excellent source of protein, omega-3 fatty acids, and other essential nutrients. Omega-3 fatty acids are known for their anti-inflammatory properties, which can help reduce the risk of chronic diseases and improve overall health. By combining these two nutritious ingredients, tomato poached fish is a great way to enjoy a healthy and delicious meal.
+
+To prepare tomato poached fish, you will need the following ingredients:
+
+4 fish fillets (any white fish such as cod, haddock, or tilapia)
+2 tbsp olive oil
+1 onion, chopped
+2 garlic cloves, minced
+1 can of chopped tomatoes
+1 cup of fish or vegetable broth
+1 tsp paprika
+1 tsp dried thyme
+Salt and pepper to taste
+To begin, heat the olive oil in a large skillet over medium-high heat. Add the onion and garlic and sauté for 2-3 minutes until softened. Add the canned tomatoes, fish broth, paprika, thyme, salt, and pepper, and stir to combine. Bring the mixture to a boil, then reduce the heat to low and let it simmer for 5 minutes. Add the fish fillets to the skillet, making sure they are fully submerged in the tomato broth. Cover the skillet and let the fish cook for 8-10 minutes, or until it is cooked through and flakes easily with a fork.
+
+When serving tomato poached fish, you can garnish it with chopped fresh herbs such as parsley or basil. You can also serve it with a side of steamed vegetables or a salad to make it a complete and balanced meal. This dish pairs well with a light white wine or a crisp rosé.
+
+In conclusion, tomato poached fish is a healthy and delicious dish that is easy to make and packed with nutrients. By using fresh ingredients and simple cooking techniques, you can create a meal that is not only satisfying but also beneficial to your health. Whether you are a seafood lover or simply looking for a healthy and flavorful meal, tomato poached fish is definitely worth trying.Tomato poached fish is a delicious and healthy dish that is perfect for seafood lovers. It is a simple recipe that involves cooking fish in a tomato-based broth. This dish is not only easy to make, but it is also very flavorful and nutritious. In this essay, we will discuss the benefits of tomato poached fish, how to prepare it, and some tips for serving it.
+
+Tomatoes are a rich source of vitamins, minerals, and antioxidants. They contain vitamin C, vitamin K, potassium, and lycopene, a powerful antioxidant that has been shown to reduce the risk of chronic diseases such as cancer and heart disease. Fish, on the other hand, is an excellent source of protein, omega-3 fatty acids, and other essential nutrients. Omega-3 fatty acids are known for their anti-inflammatory properties, which can help reduce the risk of chronic diseases and improve overall health. By combining these two nutritious ingredients, tomato poached fish is a great way to enjoy a healthy and delicious meal.
+
+To prepare tomato poached fish, you will need the following ingredients:
+
+4 fish fillets (any white fish such as cod, haddock, or tilapia)
+2 tbsp olive oil
+1 onion, chopped
+2 garlic cloves, minced
+1 can of chopped tomatoes
+1 cup of fish or vegetable broth
+1 tsp paprika
+1 tsp dried thyme
+Salt and pepper to taste
+To begin, heat the olive oil in a large skillet over medium-high heat. Add the onion and garlic and sauté for 2-3 minutes until softened. Add the canned tomatoes, fish broth, paprika, thyme, salt, and pepper, and stir to combine. Bring the mixture to a boil, then reduce the heat to low and let it simmer for 5 minutes. Add the fish fillets to the skillet, making sure they are fully submerged in the tomato broth. Cover the skillet and let the fish cook for 8-10 minutes, or until it is cooked through and flakes easily with a fork.
+
+When serving tomato poached fish, you can garnish it with chopped fresh herbs such as parsley or basil. You can also serve it with a side of steamed vegetables or a salad to make it a complete and balanced meal. This dish pairs well with a light white wine or a crisp rosé.
+
+In conclusion, tomato poached fish is a healthy and delicious dish that is easy to make and packed with nutrients. By using fresh ingredients and simple cooking techniques, you can create a meal that is not only satisfying but also beneficial to your health. Whether you are a seafood lover or simply looking for a healthy and flavorful meal, tomato poached fish is definitely worth trying." />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/Descreption"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="20dp">
+
+                    <TextView
+                        android:id="@+id/textStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#F4E475"
+                        android:gravity="center"
+                        android:text="Costomasible" />
+
+                    <TextView
+                        android:id="@+id/textTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#FFEB3B"
+                        android:gravity="center"
+                        android:text="20-30 min" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
 </RelativeLayout>
